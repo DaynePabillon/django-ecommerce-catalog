@@ -1,0 +1,26 @@
+{% extends 'pos_app/base.html' %}
+
+{% block title %}Home - E-commerce Catalog{% endblock %}
+
+{% block content %}
+<div class="hero-section">
+    <h2>Welcome to Our E-commerce Catalog</h2>
+    <p>Discover amazing products at great prices!</p>
+    <a href="{% url 'pos_app:product_list' %}" class="btn btn-primary">View Products</a>
+</div>
+
+<div class="features">
+    <div class="feature">
+        <h3>Quality Products</h3>
+        <p>We offer only the best quality products for our customers.</p>
+    </div>
+    <div class="feature">
+        <h3>Great Prices</h3>
+        <p>Competitive pricing on all our products.</p>
+    </div>
+    <div class="feature">
+        <h3>Fast Delivery</h3>
+        <p>Quick and reliable delivery service.</p>
+    </div>
+</div>
+{% endblock %}
